@@ -9,7 +9,7 @@ class Artist
   attr_accessor :name
   attr_reader :songs
 
-  # @@artists = []
+  @@artists = []
 
   def initialize
     # @@artists << self
@@ -21,9 +21,9 @@ class Artist
   #   @@artists.detect{|a| a.name == name}
   # end
 
-  # def self.all
-  #   @@artists
-  # end
+  def self.all
+    @@artists
+  end
 
   # def self.reset_all
   #   self.all.clear
